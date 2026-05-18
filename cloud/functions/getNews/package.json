@@ -1,0 +1,9 @@
+{
+  "name": "getNews",
+  "version": "1.0.0",
+  "description": "查询新闻列表",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "latest"
+  }
+}

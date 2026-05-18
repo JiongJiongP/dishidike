@@ -1,0 +1,57 @@
+/* ── Minimal floating player ── */
+.audio-player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--color-canvas);
+  border-top: 1rpx solid var(--color-hairline);
+  z-index: 100;
+  padding-bottom: env(safe-area-inset-bottom);
+  box-shadow: var(--shadow-card);
+
+  &__progress {
+    height: 2rpx;
+    background: var(--color-primary);
+    transition: width 0.3s ease;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    padding: 16rpx 24rpx;
+  }
+
+  &__btn {
+    font-size: 32rpx;
+    width: 48rpx;
+    height: 48rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__info {
+    flex: 1;
+    min-width: 0;
+    margin-left: 12rpx;
+  }
+
+  &__label {
+    font-size: 26rpx;
+    font-weight: 500;
+    color: var(--color-ink);
+  }
+
+  &__time {
+    font-size: 22rpx;
+    font-weight: 400;
+    color: var(--color-muted);
+    margin-top: 2rpx;
+  }
+
+  &__close {
+    font-size: 28rpx;
+    color: var(--color-muted);
+  }
+}

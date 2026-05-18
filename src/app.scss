@@ -1,0 +1,33 @@
+page {
+  /* === Airbnb Design Tokens === */
+  --color-primary: #ff385c;
+  --color-primary-active: #e00b41;
+  --color-primary-disabled: #ffd1da;
+  --color-ink: #222222;
+  --color-body: #3f3f3f;
+  --color-muted: #6a6a6a;
+  --color-muted-soft: #929292;
+  --color-hairline: #dddddd;
+  --color-hairline-soft: #ebebeb;
+  --color-canvas: #ffffff;
+  --color-surface-soft: #f7f7f7;
+  --color-surface-strong: #f2f2f2;
+  --color-on-primary: #ffffff;
+  --color-scrim: rgba(0, 0, 0, 0.5);
+
+  /* radii */
+  --radius-sm: 8rpx;
+  --radius-md: 14rpx;
+  --radius-lg: 20rpx;
+  --radius-full: 9999rpx;
+
+  /* shadow — one tier only, per Airbnb */
+  --shadow-card: 0 0 0 1px rgba(0, 0, 0, 0.02), 0 2px 6px rgba(0, 0, 0, 0.04), 0 4px 8px rgba(0, 0, 0, 0.06);
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 28rpx;
+  font-weight: 400;
+  color: var(--color-ink);
+  background-color: var(--color-canvas);
+  line-height: 1.5;
+}

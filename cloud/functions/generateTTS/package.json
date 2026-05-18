@@ -1,0 +1,9 @@
+{
+  "name": "generateTTS",
+  "version": "1.0.0",
+  "description": "生成TTS语音",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "latest"
+  }
+}

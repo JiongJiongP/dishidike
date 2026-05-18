@@ -1,0 +1,67 @@
+.index-page {
+  min-height: 100vh;
+  background: var(--color-canvas);
+  padding-bottom: 120rpx;
+
+  /* ── Header ── */
+  &__header {
+    padding: 48rpx 32rpx 16rpx;
+  }
+
+  &__title {
+    font-size: 36rpx;
+    font-weight: 600;
+    color: var(--color-ink);
+    letter-spacing: -0.5rpx;
+  }
+
+  &__subtitle {
+    font-size: 24rpx;
+    font-weight: 400;
+    color: var(--color-muted);
+    margin-top: 4rpx;
+  }
+
+  /* ── List ── */
+  &__list {
+    padding: 8rpx 24rpx;
+  }
+
+  /* ── Bottom actions ── */
+  &__actions {
+    display: flex;
+    justify-content: center;
+    gap: 16rpx;
+    padding: 32rpx 24rpx;
+  }
+
+  &__refresh-btn {
+    font-size: 26rpx;
+    font-weight: 500;
+    color: var(--color-ink);
+    background: var(--color-canvas);
+    border: 1rpx solid var(--color-ink);
+    border-radius: var(--radius-sm);
+    padding: 18rpx 36rpx;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__share-btn {
+    font-size: 26rpx;
+    font-weight: 500;
+    color: var(--color-on-primary);
+    background: var(--color-primary);
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: 18rpx 36rpx;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after { border: none; }
+  }
+}

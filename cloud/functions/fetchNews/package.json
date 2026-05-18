@@ -1,0 +1,10 @@
+{
+  "name": "fetchNews",
+  "version": "1.0.0",
+  "description": "定时抓取热点新闻",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "latest",
+    "axios": "^1.6.0"
+  }
+}

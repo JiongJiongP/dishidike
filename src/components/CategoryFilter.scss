@@ -1,0 +1,26 @@
+/* ── Like Airbnb category strip ── */
+.category-filter {
+  display: flex;
+  white-space: nowrap;
+  padding: 16rpx 24rpx;
+
+  &__item {
+    display: inline-block;
+    font-size: 24rpx;
+    font-weight: 400;
+    color: var(--color-muted);
+    padding: 10rpx 20rpx;
+    margin-right: 8rpx;
+    border-radius: var(--radius-full);
+    background: transparent;
+    transition: none;
+
+    &--active {
+      color: var(--color-ink);
+      font-weight: 500;
+      border-bottom: 2rpx solid var(--color-ink);
+      border-radius: 0;
+      padding-bottom: 8rpx;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "getNewsHistory",
+  "version": "1.0.0",
+  "description": "查询历史批次",
+  "main": "index.js",
+  "dependencies": {
+    "wx-server-sdk": "latest"
+  }
+}

@@ -1,0 +1,101 @@
+.news-card {
+  display: flex;
+  align-items: center;
+  background: var(--color-canvas);
+  border-radius: var(--radius-md);
+  margin-bottom: 16rpx;
+  padding: 16rpx;
+  box-shadow: var(--shadow-card);
+
+  &--hover { opacity: 0.8; }
+
+  /* ── Thumbnail: photo-first, like Airbnb property card ── */
+  &__thumb {
+    width: 100rpx;
+    height: 72rpx;
+    border-radius: var(--radius-sm);
+    margin-right: 16rpx;
+    flex-shrink: 0;
+    background: var(--color-surface-soft);
+  }
+
+  /* ── Body ── */
+  &__body {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6rpx;
+  }
+
+  &__title {
+    font-size: 28rpx;
+    font-weight: 500;
+    color: var(--color-ink);
+    line-height: 1.25;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__summary {
+    font-size: 24rpx;
+    font-weight: 400;
+    color: var(--color-body);
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* ── Meta row ── */
+  &__meta {
+    display: flex;
+    align-items: center;
+    gap: 12rpx;
+  }
+
+  &__source {
+    font-size: 22rpx;
+    font-weight: 400;
+    color: var(--color-muted);
+  }
+
+  &__category {
+    font-size: 20rpx;
+    font-weight: 500;
+    color: var(--color-ink);
+    background: var(--color-surface-soft);
+    padding: 2rpx 10rpx;
+    border-radius: var(--radius-full);
+  }
+
+  /* ── Play orb: like Airbnb search orb ── */
+  &__play {
+    width: 48rpx;
+    height: 48rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-primary);
+    border-radius: var(--radius-full);
+    margin-left: 12rpx;
+    flex-shrink: 0;
+
+    &--active {
+      animation: pulse 1.5s infinite;
+    }
+  }
+
+  &__play-icon {
+    font-size: 20rpx;
+    color: var(--color-on-primary);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.65; }
+}
